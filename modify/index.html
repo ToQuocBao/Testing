@@ -7,17 +7,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
         <title>Trang chủ</title>
-        <link rel="stylesheet" href="./css/homepage.css">
-        <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="../css/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/modify.css">
     </head>
     <body>
         <div class="container">
             <div class="content-body">
                 <!-- menu bar bên trái -->
                 <div class="menu-bar">
-                    <h2 class="menu-title">
+                    <h1 class="menu-title">
                         Menu
-                    </h2>
+                    </h1>
                     <div>
                         <i class="ti-user"></i>
                         <a href="#">
@@ -47,7 +48,7 @@
                 <!-- phần chính bên phải -->
                 <div class="main-content">
                     <!-- thanh header bên trên -->
-                    <div class="hearder-bar">
+                    <div class="header-bar">
                         <div class="search-bar">
                             <input type="text" placeholder="Search..">
                         </div>
@@ -57,6 +58,16 @@
                         <div class="account-btn">
                             <i class="ti-user"></i>
                             <div class="account-name">Phạm Công Hậu</div>
+                        </div>
+
+                        <!-- user menu -->
+                        <div class="user-menu">
+                            <div class="user-btn" id="profile-btn">
+                                Hồ sơ
+                            </div>
+                            <div class="user-btn" id="logout-btn">
+                                Đăng xuất
+                            </div>
                         </div>
                     </div>
 
@@ -86,26 +97,20 @@
                                 <h2>Các đề xuất</h2>
                             </div>
                             <div class="suggestion-card">
-                                <div class="noti-description">
-                                    <div class="noti-title">
+                                <div class="suggestion-description">
+                                    <div class="card-title">
                                         Điều chỉnh môi trường
                                     </div>
-                                    <div class="noti-time">
-                                        Người dùng nên làm hành vi 1, hành vi 2
-                                    </div>
                                 </div>
-                                <div class="go-btn">></div>
+                                <div class="card-btn">></div>
                             </div>
-                            <div class="noti-card">
-                                <div class="noti-description">
-                                    <div class="noti-title">
+                            <div class="suggestion-card">
+                                <div class="suggestion-description">
+                                    <div class="card-title">
                                         Kiểm tra hệ thống
                                     </div>
-                                    <div class="noti-time">
-                                        bbbbbbbbb
-                                    </div>
                                 </div>
-                                <div class="noti-close-btn">X</div>
+                                <div class="card-btn">X</div>
                             </div>
                         </div>
                     </div>

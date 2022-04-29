@@ -8,7 +8,7 @@ html {
     background-color: #ffffff;
     color: #5a5a5a;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
 }
 
@@ -18,16 +18,144 @@ html {
     clear: both;
 }
 
-.body-form{
-    background-color: #E5E5E5;
-    margin: 0px 100px;
-    margin-top: 120px;
-    padding: 50px 0px;
-    text-align: center;
+.content-body{
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    height: calc(100vh - 100px);
 }
 
-h1{
+.menu-bar{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e5e5e5;
+}
+
+.menu-bar .menu-title{
+    text-align: center;
+    font-weight: 700;
     color: black;
-    font-weight: 600;
-    font-size: 40px;
+}
+
+.menu-bar > div{
+    display: flex;
+    margin: 12px;
+    padding: 5px;
+    min-width: 200px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.menu-bar i {
+    line-height: 36px;
+    font-weight: 900;
+    flex: 1;
+}
+.menu-bar a{
+    flex: 5;
+    text-align: center;
+    background-color: #3693EA;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 36px;
+
+}
+
+.main-content{
+    flex: 3;
+    margin: 10px;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.header-bar{
+    background-color: #E5E5E5;
+    height: 60px;
+    padding: 5px;
+    /* position: absolute; */
+    clear: both;
+}
+
+
+
+.header-bar div, .header-bar a{
+    display: inline;
+    line-height: 50px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
+    min-width: 80px;
+}
+
+
+.header-bar .search-bar input[type=text]{
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    width: 22%;
+    min-width: 120px;
+}
+
+.header-bar .search-bar{
+    height: 36px;
+    margin: 0;
+    margin-top: -8px;
+    
+}
+
+.header-bar .header-btn{
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.header-bar .account-btn{
+    float: right;
+    margin-top: 0px;
+    height: 36px;
+    width: 170px;
+}
+
+.header-bar .user-menu{
+    display: none;
+    background-color: white;
+    position: absolute;
+    float: right;
+    top: 100px;
+    right: 30px;
+    border-radius: 10px;
+    border: 0.5px solid #e5e5e5;
+}
+
+.header-bar .user-btn{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    width: 170px;
+}
+
+
+.footer{
+    display: flex;
+    background-color: #e5e5e5;
+    height: 50px;
+    padding: 5px;
+    margin: -10px 20px;
+}
+
+.footer a{
+    flex: 1;
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.footer a:active{
+    color: black;
 }

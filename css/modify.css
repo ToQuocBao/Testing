@@ -1,0 +1,49 @@
+.modify-and-suggestion{
+    display: flex;
+    height: calc(100% - 80px);
+}
+
+.modify-form{
+    flex: 3;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.suggestion{
+    flex: 1;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.suggestion .suggestion-title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.suggestion-card{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 -10px;
+    height: 70px;
+    border-top: 1px solid black;
+}
+
+.suggestion-card .card-title{
+    line-height: 50px;
+}
+
+.suggestion-card .card-btn{
+    position: absolute;
+    top:0 ;
+    right: 0;
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}

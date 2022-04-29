@@ -7,18 +7,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
         <title>Trang chủ</title>
-
-        <link rel="stylesheet" href="./css/homepage.css">
         <link rel="stylesheet" href="./css/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/homepage.css">
     </head>
     <body>
         <div class="container">
             <div class="content-body">
                 <!-- menu bar bên trái -->
                 <div class="menu-bar">
-                    <h2 class="menu-title">
+                    <h1 class="menu-title">
                         Menu
-                    </h2>
+                    </h1>
                     <div>
                         <i class="ti-user"></i>
                         <a href="#">
@@ -43,12 +43,15 @@
                             <div class="menu-bt">Hướng dẫn sử dụng</div>
                         </a>
                     </div>
+
+                    
+
                 </div>
 
                 <!-- phần chính bên phải -->
                 <div class="main-content">
                     <!-- thanh header bên trên -->
-                    <div class="hearder-bar">
+                    <div class="header-bar">
                         <div class="search-bar">
                             <input type="text" placeholder="Search..">
                         </div>
@@ -59,6 +62,16 @@
                             <i class="ti-user"></i>
                             <div class="account-name">Phạm Công Hậu</div>
                         </div>
+
+                        <!-- user menu -->
+                        <div class="user-menu">
+                            <div class="user-btn" id="profile-btn">
+                                Hồ sơ
+                            </div>
+                            <div class="user-btn" id="logout-btn">
+                                Đăng xuất
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Phần nội dung và thông báo -->
@@ -66,25 +79,25 @@
                         <div class="info">
                             <div class="sensor-info">
                                 <div class="sensor-temp">
-                                    Nhiệt độ: <p class="temp">33</p>
+                                    Nhiệt độ: <span id="temp">33</span>
                                 </div>
                                 <div class="sensor-humidity">
-                                    Độ ẩm là: <p class="humidity">65%</p>
+                                    Độ ẩm là: <span id="humidity">65%</span>
                                 </div>
-                                <div class="last-update">Đã cập nhật <p class="datetime">a</p></div>
+                                <div class="last-update">Đã cập nhật <span class="datetime">29/04/2022 5:00 PM</span></div>
                             </div>
 
                             <div class="info-btns">
-                                <div class="check-btn">Kiểm tra ngay</div>
-                                <div class="modify-btn">Điều chỉnh ngay</div>
+                                <a href="#"><div class="check-btn">Kiểm tra ngay</div></a>
+                                <a href="/modify/index.html"><div class="modify-btn">Điều chỉnh ngay</div></a>
                             </div>
                         </div>
 
                         <!-- Thông báo -->
                         <div class="noti">
                             <div class="date-time" id="curr-date-time">
-                                <h2 id="curr-time"></h2>
-                                <h2 id="curr-date"></h2>
+                                <h2 id="curr-time">7:00 AM</h2>
+                                <h2 id="curr-date">29/04/2022</h2>
                             </div>
                             <div class="noti-card">
                                 <div class="noti-description">

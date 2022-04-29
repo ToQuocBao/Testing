@@ -1,0 +1,114 @@
+.info-and-noti{
+    display: flex;
+    height: calc(100% - 80px);
+}
+
+.info{
+    flex: 3;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.sensor-info{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sensor-info .sensor-temp{
+    flex-basis: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 20px;
+    letter-spacing: 1.2;
+}
+
+.sensor-info .sensor-humidity{
+    flex: 1;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+
+.sensor-info .last-update{
+    flex: 1;
+    font-size: 0.7em;
+    line-height: 30px;
+}
+
+.info .info-btns{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.info .check-btn{
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 150px;
+    min-width: 150px;
+    line-height: 38px;
+}
+
+.info .info-btns a{
+    text-decoration: none;
+}
+
+.info .modify-btn{
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 150px;
+    min-width: 150px;
+    line-height: 38px;
+
+}
+
+.noti{
+    flex: 1;
+    background-color: #e5e5e5;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.noti .date-time{
+    text-align: center;
+}
+
+.noti .date-time h2{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.noti .noti-card{
+    position: relative;
+    padding: 10px 20px;
+    margin: 0 -10px;
+    border-top: 1px solid black;
+}
+
+.noti .noti-card .noti-close-btn{
+    position: absolute;
+    top:0 ;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.noti .noti-card .noti-close-btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
