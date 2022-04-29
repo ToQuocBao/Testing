@@ -78,16 +78,29 @@
                                 <h2 class="form-title">
                                     Chọn thông số mong muốn 
                                 </h2>
-                                <label for="temp-input">Nhiệt độ: </label>
-                                <select name="temp-input" id="temp-input">
+                                <div class="input-field">
+                                    <label for="temp-input">Nhiệt độ: </label>
+                                    <select name="temp-input" id="temp-input">
+                                        <option value="32">32</option>
+                                        <option value="33" selected>33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <label for="humid-input">Độ ẩm: </label>
+                                    <select name="humid-input" id="humid-input">
+                                        <option value="63">63</option>
+                                        <option value="64">64</option>
+                                        <option value="65" selected>65</option>
+                                        <option value="66">66</option>
+                                    </select>
+                                </div>
 
-                                </select>
-                                <br>
-                                <label for="humid-input">Độ ẩm: </label>
-                                <select name="humid-input" id="humid-input">
-
-                                </select>
-                                <br>
+                                <div class="modify-form-btns">
+                                    <div class="decline-btn">Kiểm tra ngay</div>
+                                    <div class="accept-btn">Điều chỉnh ngay</div>
+                                </div>
                             </form>
                         </div>
 
